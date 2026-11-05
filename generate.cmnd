@@ -1,0 +1,17 @@
+Main:numberOfEvents = 100000 ! number of events from the task
+Main:timesAllowErrors = 100 ! in case something went wrong
+
+! pp collisions with the given eCM
+Beams:idA = 2212
+Beams:idB = 2212
+Beams:eCM = 13600.
+
+SoftQCD:inelastic = on ! minimum bias mode
+
+Random:setSeed = on ! so that the results are the same
+Random:seed = 99999
+
+! fewer things printed during creation, a bit of cleanliness
+Next:numberCount = 10000
+Next:numberShowEvent = 0
+Init:showChangedParticleData = off
