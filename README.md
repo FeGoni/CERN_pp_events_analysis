@@ -18,7 +18,7 @@ Projekt obejmuje generację 100 000 zderzeń proton–proton w trybie minimum bi
 |`pres.pdf`|prezentacja zawierająca wykresy|
 |`Makefile`|kompilacja i uruchamianie kolejnych etapów|
 
-Plik `events.root` (ok. 225 MB) nie znajduje się w repozytorium. Można go odtworzyć poleceniem `make events`
+Plik `events.root` nie znajduje się w repozytorium. Można go odtworzyć poleceniem `make events`
 
 ## Wymagania
 
@@ -28,8 +28,6 @@ Plik `events.root` (ok. 225 MB) nie znajduje się w repozytorium. Można go odtw
 * GNU Make
 
 Kod jest zgodny ze standardem C++17 (sprawdzono flagami `-std=c++17 -pedantic`). Standard kompilacji jest przejmowany z `root-config`, aby był zgodny z użytą instalacją ROOT-a. W testowanym środowisku jest to `-std=c++20`
-
-Projekt testowano na Linuksie x86-64 (WSL2).
 
 ### Wariant 1: zainstalowane ROOT i Pythia
 
