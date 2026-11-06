@@ -75,7 +75,7 @@ int main(int argc, char* argv[]) {
                        100, -5., 5.);
     hPhi[c] = new TH1D(Form("hPhi_%s", names[c]),
                        Form("Azimuthal angle: %s;#phi [rad];Particles", labels[c]),
-                       64, 0., TMath::Pi());
+                       64, -TMath::Pi(), TMath::Pi());
   }
 
   TTreeReader reader(tree);
@@ -95,8 +95,7 @@ int main(int argc, char* argv[]) {
         ++count[c];
         hPt[c]->Fill(pt[i]);
         hEta[c]->Fill(eta[i]);
-        // Pythia gives phi in (-pi, pi], and the range from the task is 0 - pi,
-        // so particles with phi < 0 go to the underflow bin
+        // Pythia gives phi in (-pi, pi], the same range as the histogram
         hPhi[c]->Fill(phi[i]);
       };
 

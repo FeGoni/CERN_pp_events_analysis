@@ -124,7 +124,7 @@ int main(int argc, char* argv[]) {
       vPt.push_back(static_cast<float>(p.pT()));
       vEta.push_back(static_cast<float>(p.eta()));
       vPhi.push_back(static_cast<float>(p.phi()));
-      // the (-pi,pi] state is saved here, this will need to be corrected later
+      // the (-pi,pi] state is saved here
     }
 
     tree->Fill(); //saving particles from 1 event to the tree

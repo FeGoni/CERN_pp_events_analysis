@@ -51,7 +51,7 @@ void draw_plots(const char* inFile = "analysis.root", const char* outDir = "plot
                               "Azimuthal angle"};
   const char* xTitle[nVar] = {"Multiplicity N", "p_{T} [GeV]", "#eta", "#phi [rad]"};
   const char* yTitle[nVar] = {"Events", "Particles / 0.1 GeV", "Particles / 0.1",
-                              "Particles / (#pi/64 rad)"};
+                              "Particles / (#pi/32 rad)"};
   const bool logY[nVar]    = {true, true, false, false};
 
   // info about generator
